@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "vercel-deploye"
+client_id = "6afb5a9925b2e66c3c9240818b2a6202"
+application_url = "https://apps-shower-extends-nick.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://apps-shower-extends-nick.trycloudflare.com/auth/callback",
+  "https://apps-shower-extends-nick.trycloudflare.com/auth/shopify/callback",
+  "https://apps-shower-extends-nick.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "navneet-setoo.myshopify.com"
