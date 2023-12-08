@@ -2,7 +2,7 @@
 
 name = "vercel-deploye"
 client_id = "6afb5a9925b2e66c3c9240818b2a6202"
-application_url = "https://apps-shower-extends-nick.trycloudflare.com"
+application_url = "https://villas-proved-zones-exchanges.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://apps-shower-extends-nick.trycloudflare.com/auth/callback",
-  "https://apps-shower-extends-nick.trycloudflare.com/auth/shopify/callback",
-  "https://apps-shower-extends-nick.trycloudflare.com/api/auth/callback"
+  "https://villas-proved-zones-exchanges.trycloudflare.com/auth/callback",
+  "https://villas-proved-zones-exchanges.trycloudflare.com/auth/shopify/callback",
+  "https://villas-proved-zones-exchanges.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
