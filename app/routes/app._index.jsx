@@ -23,6 +23,7 @@ export const loader = async ({ request }) => {
 
 export const action = async ({ request }) => {
   const { admin } = await authenticate.admin(request);
+
   const color = ["Red", "Orange", "Yellow", "Green"][
     Math.floor(Math.random() * 4)
   ];
@@ -73,7 +74,8 @@ export default function Index() {
   const productId = actionData?.product?.id.replace(
     "gid://shopify/Product/",
     ""
-  );
+  ).then((resp) => console.log("Admin Response", resp))
+  .catch((error) => console.log("Error", error));;
 
   useEffect(() => {
     if (productId) {
