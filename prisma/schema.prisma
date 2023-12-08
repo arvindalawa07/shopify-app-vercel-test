@@ -2,7 +2,7 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js",
+  provider = "prisma-client-js"
 }
 
 datasource db {
@@ -19,10 +19,4 @@ model Session {
   expires     DateTime?
   accessToken String
   userId      BigInt?
-}
-model MyCustomSession {
-  id          String    @id
-  shop        String
-  state       String
-  isOnline    Boolean   @default(false)
 }
